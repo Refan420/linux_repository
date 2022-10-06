@@ -1,0 +1,645 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+@media (max-width:480px) {
+    body {
+        flex-direction: column;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .headerButton ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .subscribeBtn {
+        margin: 1rem;
+        width: 100%;
+        display: block;
+    }
+    .animation {
+        height: fit-content;
+        width: 100%;
+        margin: 1px;
+    }
+    .counter {
+        flex-direction: column;
+    }
+    .posterBody {
+        height: auto;
+    }
+    .sBlog img {
+        height: fit-content;
+        width: auto;
+        display: block;
+    }
+    .shortBlog {
+        flex-direction: column;
+    }
+    .maneContent {
+        flex-direction: column;
+    }
+    .cardsDiv {
+        flex-direction: column;
+    }
+    .fstCard {
+        flex-direction: column;
+        height: 25rem;
+    }
+    .fstCard .detalis a {
+        display: contents;
+        bottom: 0;
+        left: 0;
+    }
+    .flexDiv {
+        flex-direction: column;
+        background-color: #ece9e6;
+    }
+    .posterBlog {
+        display: inline-table;
+        box-shadow: 5px 5px 5px rgb(196, 196, 196)
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Luxurious+Roman&display=swap');
+.header {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    /* position: fixed; */
+    width: 100%;
+}
+
+.header img {
+    height: 3rem;
+    width: auto;
+    margin: .5rem 1rem;
+}
+
+.header span {
+    color: rgb(163, 165, 168);
+    font-family: Product Sans, Google Sans, Google Sans Text, sans-serif;
+    font-size: 1.375rem;
+    margin-left: 0.75rem
+}
+
+.headerButton {
+    margin: auto;
+    padding: 1px;
+}
+
+.headerButton ul {
+    display: flex;
+    color: rgb(163, 165, 168);
+    font-family: Product Sans, Google Sans, Google Sans Text, sans-serif;
+    font-size: 1.375rem;
+    list-style: none;
+    margin: auto;
+}
+
+.headerButton ul li {
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border: transparent;
+    border-radius: 18px;
+}
+
+.headerButton ul li:hover {
+    content: "";
+    background-color: rgb(63, 64, 64);
+}
+
+.headerButton ul li ul {
+    cursor: pointer;
+    display: none;
+}
+
+.gemsBtn {}
+
+.gemsBtn:hover {
+    display: inline;
+}
+
+.iconButton {
+    align-items: center;
+}
+
+.iconButton i {
+    color: rgb(163, 165, 168);
+    font-size: 1.375rem;
+    margin: 0rem .5rem;
+}
+
+.subscribeBtn {
+    height: 100%;
+    margin: 0rem .5rem;
+    padding: 1rem;
+    color: white;
+    border: none;
+    font-size: 1.375rem;
+    background-color: #0097e6;
+}
+
+.subscribeBtn:hover {
+    content: "";
+    background-color: rgb(16, 16, 243);
+    transition: .4s;
+}
+
+.posterBody {
+    /* height: 83rem; */
+    width: 100%;
+    display: block;
+    background-image: linear-gradient(167deg, #3867d6 80%, white 20%);
+    padding: .01rem;
+}
+
+.maneContent {
+    display: flex;
+    margin: 4rem 0rem;
+}
+
+.block {
+    padding: .5rem;
+    margin: auto;
+    align-items: center;
+}
+
+.block h2 {
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    line-height: 1.15;
+}
+
+.block span {
+    font-size: 20px;
+    color: whitesmoke;
+    line-height: 1.5;
+}
+
+.animation {
+    margin: auto;
+    height: 25rem;
+    width: 65%;
+    border: 1rem solid #2f364026;
+    border-radius: 10%;
+    background-color: #2f36408a;
+}
+
+.animation video {
+    margin: auto;
+}
+
+.animation .hedingSpan {
+    color: white;
+    font-size: 30px;
+    margin: 1rem;
+    width: 97%;
+    text-align: center;
+    display: block;
+}
+
+.animation button {
+    background-color: transparent;
+    font-size: 30px;
+    padding: .5rem;
+    width: 97%;
+    border: none;
+    margin: 1rem;
+}
+
+.animation button:hover {
+    content: "";
+    background-color: #0097e6;
+    transition: .3s;
+    border-radius: 20px;
+}
+
+.shortBlog {
+    background-color: transparent;
+    display: flex;
+    margin: auto;
+    padding: 1rem;
+}
+
+.sBlog {
+    background-color: #ffffff;
+    border-radius: 20px;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    position: relative;
+    height: 40rem;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.sBlog img {
+    height: 13rem;
+    width: auto;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+.sBlog h2 {
+    color: rgb(87, 86, 86);
+    text-align: center;
+    font-size: 40px;
+    margin: 2rem;
+}
+
+.sBlog span {
+    text-align: center;
+    color: #8c8c8c;
+    padding: .5rem;
+    line-height: 1.5;
+    font-size: 22px;
+    display: block;
+}
+
+.sBlog a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 2rem;
+    text-decoration: none;
+    color: #0097e6;
+    align-items: center;
+}
+
+.sBlog a:hover {
+    content: "";
+    color: rgb(94, 94, 94);
+}
+
+.flexDiv {
+    display: flex;
+}
+
+.leftDiv {
+    text-align: center;
+    position: relative;
+    padding: 1rem;
+}
+
+.leftDiv h1 {
+    font-size: 40px;
+    color: #2f3640;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.leftDiv span {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+
+.leftDiv a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 1rem;
+    text-decoration: none;
+    color: #3867d6;
+}
+
+.leftDiv a:hover {
+    color: #2f3640;
+    transition: .3s;
+}
+
+.rightDiv {
+    padding: 1%;
+    margin: auto;
+    text-align: center;
+    font-size: revert-layer;
+}
+
+.rightDiv img {
+    width: 21rem;
+}
+
+.shortInfo {
+    margin: 5% 0%;
+    text-align: center;
+}
+
+.shortInfo h1 {
+    font-size: 50px;
+    color: #2f3640;
+    font-family: Lato;
+}
+
+.shortInfo span {
+    font-size: 18px;
+    color: #8c8c8c;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+
+.counter {
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.counterOption {
+    margin: 1rem auto;
+}
+
+.counter span {
+    font-size: 50px;
+}
+
+.counter p {
+    font-size: 18px;
+    font-style: bold;
+}
+
+.subPoster {
+    display: block;
+    padding: 1rem;
+}
+
+.subPoster h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: arial;
+    font-weight: 500;
+}
+
+.subPoster span {
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    margin: 1rem
+}
+
+.posterImg {
+    background-image: url(./Gallery/subposter.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 60rem;
+    width: auto;
+    margin: 2.5rem;
+    padding: 1rem;
+    align-content: center;
+}
+
+.posterBlog {
+    padding: 1rem;
+    background-color: #ffffff82;
+    border-radius: 10px;
+    height: 18rem;
+    float: left;
+    margin: 20% 0% 0% 0%;
+    width: fit-content;
+}
+
+.posterBlog .detalis {
+    position: relative;
+}
+
+.posterBlog .detalis span {
+    line-height: 2;
+}
+
+.posterBlog .detalis a {
+    position: absolute;
+    left: 0;
+    bottom: -74px;
+    margin: 1rem;
+}
+
+.cardsDiv {
+    display: flex;
+    margin: 2rem;
+}
+
+.fstCard {
+    display: flex;
+    box-shadow: 5px 5px 5px rgb(130, 128, 128);
+    width: 100%;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.fstCard img {
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: .5rem;
+}
+
+.detalis {
+    position: relative;
+}
+
+.detalis h3 {
+    color: #2f3640;
+    text-align-last: left;
+    margin: .4rem;
+}
+
+.detalis span {
+    color: black;
+    font-size: 22px;
+    text-align: left;
+    margin: .5rem;
+}
+
+.detalis a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 1rem;
+    text-decoration: none;
+    color: #3867d6;
+}
+
+.detalis a:hover {
+    color: #2f3640;
+    transition: .3s;
+}
+
+.buttonDiv {
+    width: 100%;
+    text-align: center;
+}
+
+.buttonDiv button {
+    margin: auto;
+    border: double;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 1rem;
+    font-size: inherit;
+}
+
+.buttonDiv button:hover {
+    background-color: #8c8c8c80;
+    transition: .3s;
+}
+
+.newPoster {
+    background-image: linear-gradient(108deg, #0652DD 70%, #1e90ff 30%);
+    margin: 2rem 0rem;
+    padding: 1rem;
+}
+
+.posterImage {
+    display: flex;
+    position: relative;
+    height: 37rem;
+    padding: 3rem;
+}
+
+.newPosBlog {
+    float: left;
+    align-items: center;
+    margin: 7rem 0rem;
+    padding: .5rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(20, 20, 172, 0.418);
+    display: block;
+}
+
+.newPosBlog h3 {
+    font-size: 35px;
+    font-family: arial;
+    font-weight: 500;
+    color: #c6c3c3;
+}
+
+.newPosBlog h2 {
+    text-align: center;
+    font-size: 50px;
+    text-align: left;
+    color: white;
+    font-weight: 600;
+}
+
+.newPosBlog span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+    color: #d8d8d8;
+    text-align: left;
+}
+
+.newPosBlog button {
+    margin: auto;
+    padding: 1rem 2.5rem;
+    border-radius: 10px;
+    color: #1e90ff;
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    font-weight: 350;
+}
+
+.newPosBlog button:hover {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    transition: .1s;
+}
+
+.posterImage img {
+    position: absolute;
+    top: -7rem;
+    right: 0rem;
+    width: 55rem;
+}
+
+.maneArtical {
+    display: flex;
+    padding: 1rem;
+    margin: .5rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.articalDiv {
+    margin: 1.5rem;
+    border-radius: 10px;
+    padding: .5rem;
+    position: relative;
+}
+
+.articalDiv:hover {
+    box-shadow: 5px 5px 5px 5px gray;
+    transition: .3s;
+}
+
+.fa-laptop {
+    background-color: #28ae47;
+    border-radius: 50%;
+    padding: .5rem;
+    margin: .3rem;
+    color: silver;
+    font-size: 20px;
+}
+
+.fa-car {
+    background-color: #ff1e1e8d;
+    border-radius: 50%;
+    padding: .5rem;
+    margin: .3rem;
+    color: silver;
+    font-size: 20px;
+}
+
+.fa-gamepad {
+    background-color: #1e90ff;
+    border-radius: 50%;
+    padding: .5rem;
+    margin: .3rem;
+    color: silver;
+    font-size: 20px;
+}
+
+.articalDiv h2 {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    font-family: lato;
+    color: #2f3640;
+}
+
+.articalDiv span {
+    line-height: 2;
+    color: #8c8c8c;
+    font-size: 18px;
+}
+
+.articalDiv a {
+    text-decoration: none;
+    display: block;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.articalDiv a:hover {
+    color: #2f3640;
+}
+
+.allArticals {
+    margin: auto;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 350;
+    color: #8c8c8c;
+}
+
+.allArticals:hover {
+    background-color: #8c8c8c96;
+    color: #1e90ff;
+    transition: .3s;
+}
